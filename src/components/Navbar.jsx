@@ -3,7 +3,7 @@ import React from 'react';
 const Navbar = () => {
   return (
     <nav className="flex justify-between items-center p-6">
-      <div className="text-white text-2xl font-bold">Astrolus</div>
+      <div className="text-white text-2xl font-bold">MaverilTrails</div>
       <ul className="hidden md:flex space-x-8 text-white">
         {['Footprint Calculator', 'Gallery', 'Testimonial', 'Contact', 'Blog'].map((item) => (
           <li key={item}>
