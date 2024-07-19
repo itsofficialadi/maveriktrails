@@ -1,3 +1,4 @@
+/* index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,8 +11,8 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom, #f0f0f0, #e0e0e0); /* Example gradient background */
 }
-
 
 /* Custom Styles */
 @keyframes marquee {
@@ -35,4 +36,20 @@ body {
 
 .brand-logo:hover {
   filter: grayscale(0%);
+}
+
+/* Navbar Styles */
+.navbar {
+  @apply fixed top-0 left-0 right-0 p-6 transition-all duration-300;
+  background: rgba(255, 255, 255, 0); /* Transparent initially */
+  backdrop-filter: blur(0px); /* No blur effect initially */
+  box-shadow: none; /* No shadow initially */
+  z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+/* Navbar when scrolled */
+.navbar.scrolled {
+  @apply bg-white bg-opacity-10; /* Translucent background */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
 }
