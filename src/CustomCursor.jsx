@@ -15,6 +15,14 @@ const CustomCursor = () => {
       });
     };
 
+    const onMouseLeave = () => {
+      gsap.to(cursorRef.current, { opacity: 0, duration: 0.05 }); // Instant disappearance
+    };
+
+    const onMouseEnter = () => {
+      gsap.to(cursorRef.current, { opacity: 1, duration: 0.05 }); // Instant appearance
+    };
+
     const onClick = (e) => {
       const cloudAnim = document.createElement('div');
       cloudAnim.className = 'cloud-anim';
@@ -33,10 +41,14 @@ const CustomCursor = () => {
     };
 
     document.addEventListener('mousemove', onMouseMove);
+    document.addEventListener('mouseleave', onMouseLeave);
+    document.addEventListener('mouseenter', onMouseEnter);
     document.addEventListener('click', onClick);
 
     return () => {
       document.removeEventListener('mousemove', onMouseMove);
+      document.removeEventListener('mouseleave', onMouseLeave);
+      document.removeEventListener('mouseenter', onMouseEnter);
       document.removeEventListener('click', onClick);
     };
   }, []);

@@ -10,6 +10,8 @@
   background-size: contain;
   pointer-events: none;
   z-index: 9999;
+  transition: opacity 0.05s ease;
+  opacity: 1; /* Start with visible cursor */
 }
 
 .cloud-anim {
