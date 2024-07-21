@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''} flex justify-between items-center p-6 transition-all duration-300`}>
-      <div className="text-white text-2xl font-bold">MaverilTrails</div>
+      <div className="text-white text-2xl font-bold">MaverikTrails</div>
       <ul className="hidden md:flex space-x-8 text-white">
         {['Footprint Calculator', 'Gallery', 'Testimonial', 'Contact', 'Blog'].map((item) => (
           <li key={item}>
