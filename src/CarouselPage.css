@@ -1,0 +1,39 @@
+.carousel-caption-custom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1); /* More transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff; /* White text color for clear visibility */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Text shadow for better readability */
+  }
+  
+  .carousel-caption-custom h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .carousel-caption-custom p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .learn-more-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  .learn-more-button:hover {
+    background-color: #0056b3; /* Darker blue for hover effect */
+  }
+  
