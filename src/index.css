@@ -53,3 +53,33 @@ body {
   backdrop-filter: blur(10px); /* Frosted glass effect */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
 }
+
+.carousel .slide {
+  background: none;
+}
+
+.carousel .slide img,
+.carousel .slide video {
+  max-height: 100vh;
+  object-fit: cover;
+}
+
+.carousel .control-dots .dot {
+  background: white;
+}
+
+.carousel .control-dots .dot.selected {
+  background: #4F46E5; /* primary color */
+}
+
+.carousel .carousel-slider {
+  overflow: hidden; /* Ensures that the video doesn't overflow */
+}
+
+.group:hover .group-hover\:bg-opacity-90 {
+  background-opacity: 0.9 !important;
+}
+
+.group:hover .group-hover\:transition-all {
+  transition: all 0.3s ease-in-out;
+}
