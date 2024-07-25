@@ -84,11 +84,13 @@ const Hero = () => {
       >
         {carouselItems.map((item, index) => (
           <div key={index} className="relative h-screen group">
-            {item.type === 'image' ? (
-              <img src={item.src} alt={item.alt} className="w-full h-full object-cover" />
-            ) : (
-              <video src={item.src} alt={item.alt} className="w-full h-full object-cover" autoPlay loop muted />
-            )}
+            <div className="relative w-full h-full">
+              {item.type === 'image' ? (
+                <img src={item.src} alt={item.alt} className="w-full h-full object-cover filter brightness-50" />
+              ) : (
+                <video src={item.src} alt={item.alt} className="w-full h-full object-cover filter brightness-50" autoPlay loop muted />
+              )}
+            </div>
             <div className="absolute bottom-10 left-10 bg-white bg-opacity-70 p-6 rounded-lg text-black max-w-md group-hover:bg-opacity-90 transition-all">
               <h2 className="text-3xl font-bold">{item.title}</h2>
               <p className="mt-4">{item.description}</p>
