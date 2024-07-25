@@ -1,35 +1,37 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faXTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import '@fortawesome/fontawesome-svg-core/styles.css'; // Import the CSS
 
 const teamMembers = [
   {
-    name: 'Leonard Krasner',
-    role: 'Senior Designer',
-    image: '/images/leonard.jpg',
-    twitter: '#',
-    linkedin: '#',
+    name: 'Akash Kr. Gupta',
+    role: 'Leader',
+    image: 'src/assets/Akash-Kumar-Gupta-min.jpeg',
+    github: 'https://github.com/akash7596',
+    twitter: 'https://x.com/akashku77810153',
+    linkedin: 'https://linkedin.com/in/akash-kumar-gupta-5a8980157',
   },
   {
-    name: 'Floyd Miles',
-    role: 'Principal Designer',
-    image: '/images/floyd.jpg',
-    twitter: '#',
-    linkedin: '#',
+    name: 'Aditya Shekhar',
+    role: 'Member 2',
+    image: 'src/assets/Aditya-Shekhar-min.jpeg',
+    github: 'https://github.com/itsofficialadi',
+    twitter: 'https://x.com/itsofficialadi',
+    linkedin: 'https://www.linkedin.com/in/itsofficialadi/',
   },
   {
-    name: 'Emily Selman',
-    role: 'VP, User Experience',
-    image: '/images/emily.jpg',
-    twitter: '#',
-    linkedin: '#',
+    name: 'Nikhil Kumhar',
+    role: 'Member 3',
+    image: 'src/assets/nikhil-kumhar-min.jpeg',
+    github: 'https://github.com/Nikhilkumhar',
+    linkedin: 'https://www.linkedin.com/in/nikhil-kumhar-724187265',
   },
   {
-    name: 'John Doe',
-    role: 'Backend Developer',
-    image: '/images/john.jpg',
-    twitter: '#',
+    name: 'Piyush Bharadwaj',
+    role: 'Member 4',
+    image: 'src/assets/Piyush-Bharadwaj-min.jpeg',
+    github: 'https://github.com/Piyush3010i',
     linkedin: '#',
   },
 ];
@@ -61,8 +63,11 @@ const TeamSection = () => {
                 <h3 className="text-2xl font-semibold mb-2">{member.name}</h3>
                 <p className="text-lg text-gray-400 mb-4">{member.role}</p>
                 <div className="flex justify-center space-x-4">
+                  <a href={member.github} className="text-gray-400 hover:text-white">
+                    <FontAwesomeIcon icon={faGithub} />
+                  </a>
                   <a href={member.twitter} className="text-gray-400 hover:text-white">
-                    <FontAwesomeIcon icon={faTwitter} />
+                    <FontAwesomeIcon icon={faXTwitter} />
                   </a>
                   <a href={member.linkedin} className="text-gray-400 hover:text-white">
                     <FontAwesomeIcon icon={faLinkedin} />
