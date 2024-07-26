@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''} flex justify-between items-center p-6 transition-all duration-300 bg-transparent`}>
       <Link to="/" className="text-white text-2xl font-bold">
-        <img src="src/assets/MaverikTrails-logo.png" alt="MaverikTrails Logo" className="h-12" /> {/* Update the src with the actual path to your logo */}
+        <img src="src/assets/MaverikTrails-logo.png" alt="MaverickTrails Logo" className="h-12" /> {/* Update the src with the actual path to your logo */}
       </Link>
       <ul className="hidden md:flex space-x-8 text-white">
         <li>

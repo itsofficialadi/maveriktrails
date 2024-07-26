@@ -20,7 +20,7 @@ const Footer = () => {
           <a href="#" className="text-secondary hover:text-primary">Contact</a>
         </div>
         <div className="text-center text-secondary">
-          <p>&copy; 2024 MaverikTrails. All rights reserved</p>
+          <p>&copy; 2024 MaverickTrails. All rights reserved</p>
         </div>
       </div>
     </footer>
