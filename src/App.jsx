@@ -12,6 +12,7 @@ import Register from './components/Register';
 import ForgotPassword from './components/ForgotPassword';
 import ResetPassword from './components/ResetPassword';
 import TeamSection from './components/TeamSection';
+import Contact from './components/Contact';
 
 const AppContent = () => {
   const location = useLocation();
@@ -39,6 +40,7 @@ const AppContent = () => {
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/carbon-footprint-calculator" element={<CarbonFootprintCalculator />} />
         <Route path="/our-team" element={<TeamSection />} />
+        <Route path="/contact" element={<Contact/>} />
       </Routes>
     </div>
   );
