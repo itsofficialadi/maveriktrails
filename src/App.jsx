@@ -41,11 +41,9 @@ const AppContent = () => {
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/carbon-footprint-calculator" element={<CarbonFootprintCalculator />} />
         <Route path="/our-team" element={<TeamSection />} />
-<<<<<<< HEAD
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
 
->>>>>>> 2ba4d73 (added about path)
       </Routes>
     </div>
   );
