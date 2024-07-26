@@ -43,7 +43,6 @@ const AppContent = () => {
         <Route path="/our-team" element={<TeamSection />} />
 <<<<<<< HEAD
         <Route path="/contact" element={<Contact />} />
-=======
         <Route path="/about" element={<About />} />
 
 >>>>>>> 2ba4d73 (added about path)
