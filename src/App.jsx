@@ -5,6 +5,7 @@ import Hero from './components/hero';
 import Features from './components/Features';
 import TrustedBrands from './components/TrustedBrands';
 import Footer from './components/Footer';
+import About from './components/About';
 import CarbonFootprintCalculator from './components/CarbonFootprintCalculator';
 import CustomCursor from './CustomCursor';
 import Login from './components/Login';
@@ -39,6 +40,7 @@ const AppContent = () => {
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/carbon-footprint-calculator" element={<CarbonFootprintCalculator />} />
         <Route path="/our-team" element={<TeamSection />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </div>
   );
