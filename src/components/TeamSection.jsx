@@ -25,6 +25,7 @@ const teamMembers = [
     role: 'Member 3',
     image: 'src/assets/nikhil-kumhar-min.jpeg',
     github: 'https://github.com/Nikhilkumhar',
+    twitter: '#',
     linkedin: 'https://www.linkedin.com/in/nikhil-kumhar-724187265',
   },
   {
@@ -32,7 +33,8 @@ const teamMembers = [
     role: 'Member 4',
     image: 'src/assets/Piyush-Bharadwaj-min.jpeg',
     github: 'https://github.com/Piyush3010i',
-    linkedin: '#',
+    twitter: 'https://twitter.com/3010_piyush',
+    linkedin: 'https://www.linkedin.com/in/piyush-bharadwaj-6114a9319/',
   },
 ];
 
