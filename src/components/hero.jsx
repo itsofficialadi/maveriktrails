@@ -1,9 +1,48 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel styles
 import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+// Register the GSAP ScrollTrigger plugin
+gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
+  // References to the heading and paragraphs for animation
+  const headingRef = useRef(null);
+  const paragraphsRef = useRef(null);
+
+  // Initialize AOS for scroll animations
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
+  // GSAP animation for the heading
+  useEffect(() => {
+    const heading = headingRef.current;
+
+    gsap.fromTo(
+      heading,
+      { scale: 3, y: 200, opacity: 0 },
+      {
+        scale: 1,
+        y: 0,
+        opacity: 1,
+        scrollTrigger: {
+          trigger: heading,
+          start: 'top 80%',
+          end: 'top 20%',
+          scrub: true,
+          toggleActions: 'play reverse play reverse',
+        },
+      }
+    );
+  }, []);
+
+  // Carousel items data
   const carouselItems = [
     {
       src: 'src/assets/sikkim-min.jpg',
@@ -47,6 +86,7 @@ const Hero = () => {
     },
   ];
 
+  // Custom arrow for previous button in the carousel
   const renderArrowPrev = (onClickHandler, hasPrev, label) =>
     hasPrev && (
       <button
@@ -59,6 +99,7 @@ const Hero = () => {
       </button>
     );
 
+  // Custom arrow for next button in the carousel
   const renderArrowNext = (onClickHandler, hasNext, label) =>
     hasNext && (
       <button
@@ -92,7 +133,7 @@ const Hero = () => {
               )}
             </div>
             <div className="absolute bottom-10 left-10 bg-white bg-opacity-70 p-6 rounded-lg text-black max-w-md group-hover:bg-opacity-90 transition-all">
-              <h2 className="text-3xl font-bold">{item.title}</h2>
+              <h2 className="text-3xl font-display font-bold">{item.title}</h2>
               <p className="mt-4">{item.description}</p>
               <a href={item.link} className="inline-block mt-6 bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary-dark transition">
                 Learn More
@@ -101,6 +142,26 @@ const Hero = () => {
           </div>
         ))}
       </Carousel>
+      <div className="relative bg-background text-black p-10 mt-10" data-aos="fade-up">
+        <h1
+          ref={headingRef}
+          className="text-4xl md:text-8xl lg:text-10xl font-display font-bold mb-6 text-primary absolute top-0 left-0 w-full"
+          style={{ top: '0', paddingTop: '1rem' }}
+        >
+          Welcome to Maverick Trails
+        </h1>
+        <div ref={paragraphsRef} className="relative mt-32">
+          <p className="text-lg font-sans mb-4" data-aos="fade-up" data-aos-delay="100">
+            At Maverick Trails, we believe that travel can be both thrilling and kind to the planet. Our platform is a passionate endeavor to make sustainable tourism the norm rather than the exception.
+          </p>
+          <p className="text-lg font-sans mb-4" data-aos="fade-up" data-aos-delay="200">
+            Imagine a space where eco-friendly travel destinations, green accommodations, and mindful activities come together, just waiting to be explored. Maverick Trails is here to guide environmentally conscious travelers to make choices that not only create unforgettable memories but also support our beautiful Earth and its communities.
+          </p>
+          <p className="text-lg font-sans mb-4" data-aos="fade-up" data-aos-delay="300">
+            By offering a treasure trove of resources, heartfelt recommendations, and intuitive booking options, we hope to inspire a new way of traveling—one that leaves a positive mark on the world.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };

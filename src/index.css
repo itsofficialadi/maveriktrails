@@ -90,3 +90,32 @@ body {
 .group:hover .group-hover\:transition-all {
   transition: all 0.3s ease-in-out;
 }
+.carousel__item {
+  transition: all 0.5s ease-in-out;
+}
+
+.carousel__nav__item {
+  transition: all 0.3s ease-in-out;
+}
+
+.carousel__nav__item--active {
+  background: #ed3c3c;
+  box-shadow: 0 0 16px #ed3c3c;
+}
+
+/*testimonial marquee*/
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 15s linear infinite;
+}

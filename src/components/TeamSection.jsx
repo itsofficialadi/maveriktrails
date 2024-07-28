@@ -1,12 +1,12 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faXTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import '@fortawesome/fontawesome-svg-core/styles.css'; // Import the CSS
+import '@fortawesome/fontawesome-svg-core/styles.css';
 
 const teamMembers = [
   {
     name: 'Akash Kr. Gupta',
-    role: 'Leader',
+    role: 'Member 1',
     image: 'src/assets/Akash-Kumar-Gupta-min.jpeg',
     github: 'https://github.com/akash7596',
     twitter: 'https://x.com/akashku77810153',
@@ -33,14 +33,14 @@ const teamMembers = [
     role: 'Member 4',
     image: 'src/assets/Piyush-Bharadwaj-min.jpeg',
     github: 'https://github.com/Piyush3010i',
-    twitter: 'https://twitter.com/3010_piyush',
+    twitter: 'https://x.com/3010_piyush',
     linkedin: 'https://www.linkedin.com/in/piyush-bharadwaj-6114a9319/',
   },
 ];
 
 const TeamSection = () => {
   return (
-    <section className="bg-gray-900 text-white py-12">
+    <section className="bg-gradient-to-r from-blue-900 via-teal-300 to-blue-900 text-black py-12">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">Meet Our Team</h2>
@@ -48,14 +48,14 @@ const TeamSection = () => {
             We’re a dynamic group of individuals who are passionate about what we do.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300"
+              className="bg-zinc-300 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300"
             >
               <div className="p-6 text-center">
-                <div className="relative mx-auto mb-6 w-32 h-32 rounded-full overflow-hidden border-4 border-gray-800">
+                <div className="relative mx-auto mb-6 w-32 h-32 rounded-full overflow-hidden border-4 border-red-800">
                   <img
                     src={member.image}
                     alt={member.name}
@@ -63,16 +63,16 @@ const TeamSection = () => {
                   />
                 </div>
                 <h3 className="text-2xl font-semibold mb-2">{member.name}</h3>
-                <p className="text-lg text-gray-400 mb-4">{member.role}</p>
+                <p className="text-lg text-black-400 mb-4">{member.role}</p>
                 <div className="flex justify-center space-x-4">
-                  <a href={member.github} className="text-gray-400 hover:text-white">
-                    <FontAwesomeIcon icon={faGithub} />
+                  <a href={member.github} className="text-black-400 hover:text-white transition-colors duration-300">
+                    <FontAwesomeIcon icon={faGithub} size="2x" />
                   </a>
-                  <a href={member.twitter} className="text-gray-400 hover:text-white">
-                    <FontAwesomeIcon icon={faXTwitter} />
+                  <a href={member.twitter} className="text-black-400 hover:text-white transition-colors duration-300">
+                    <FontAwesomeIcon icon={faXTwitter} size="2x" />
                   </a>
-                  <a href={member.linkedin} className="text-gray-400 hover:text-white">
-                    <FontAwesomeIcon icon={faLinkedin} />
+                  <a href={member.linkedin} className="text-black-400 hover:text-white transition-colors duration-300">
+                    <FontAwesomeIcon icon={faLinkedin} size="2x" />
                   </a>
                 </div>
               </div>

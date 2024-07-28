@@ -3,7 +3,7 @@ import { FaFacebook, FaInstagram, FaTwitter, FaTwitch, FaGithub } from "react-ic
 
 const Footer = () => {
   return (
-    <footer className="bg-background py-6">
+    <footer className="bg-black py-6">
       <div className="container mx-auto text-center">
         <div className="flex justify-center space-x-4 mb-4">
           <a href="https://www.facebook.com/" className="text-primary hover:text-highlight"><FaFacebook /></a>

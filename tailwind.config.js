@@ -7,13 +7,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#4F46E5',
-        'primary-dark': '#3730A3',
-        secondary: '#64748b',
-        background: '#0f172a',
+        primary: '#4CAF50', // Eco-friendly green
+        'primary-dark': '#388E3C',
+        secondary: '#81C784',
+        background: '#F1F8E9', // Light eco-friendly background
+        accent: '#8BC34A',
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['Nunito', 'sans-serif'],
+        display: ['Playfair Display', 'serif'],
       },
     },
   },
