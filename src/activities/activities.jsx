@@ -26,9 +26,9 @@ const Activities = () => {
       </h1>
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {activityOptions.map((option) => (
-          <Link to={option.path} key={option.name} className="group relative block rounded-lg overflow-hidden shadow-lg" data-aos="fade-up">
-            <div className="relative w-full h-96 flex items-center justify-center bg-cover bg-center transition-transform duration-300 transform group-hover:scale-105" style={{ backgroundImage: `url(${option.image})` }}>
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-75 clip-shape"></div>
+          <Link to={option.path} key={option.name} className="group relative block rounded-full overflow-hidden shadow-lg" data-aos="fade-up">
+            <div className="relative w-full h-80 flex items-center justify-center bg-cover bg-center transition-transform duration-300 transform group-hover:scale-105" style={{ backgroundImage: `url(${option.image})` }}>
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-75 rounded-full"></div>
               <div className="relative z-10 p-6 text-center text-white">
                 <h2 className="text-2xl font-bold mb-4">{option.name}</h2>
                 <p className="hidden group-hover:block bg-primary-dark px-4 py-2 rounded-full">{option.description}</p>
