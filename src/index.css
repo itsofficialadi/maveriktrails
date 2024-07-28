@@ -4,10 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Import Dancing Script font */
-
-
-
 
 html {
   scroll-behavior: smooth;
@@ -17,7 +13,6 @@ body {
   font-family: 'Inter', sans-serif;
   background: linear-gradient(to bottom, #f0f0f0, #e0e0e0); /* Example gradient background */
 }
-
 
 /* Custom Styles */
 @keyframes marquee {
@@ -94,6 +89,7 @@ body {
 .group:hover .group-hover\:transition-all {
   transition: all 0.3s ease-in-out;
 }
+
 .carousel__item {
   transition: all 0.5s ease-in-out;
 }
@@ -123,7 +119,8 @@ body {
   will-change: transform;
   animation: marquee 15s linear infinite;
 }
-/*explore india*/
+
+/* Explore India Section */
 .font-display {
   font-family: 'Poppins', sans-serif;
 }
@@ -159,11 +156,62 @@ body {
   background-color: #388E3C;
 }
 
-group:hover .group-hover\:block {
+.group:hover .group-hover\:block {
   display: block;
 }
 
 /* Clip shape for cards */
 .clip-shape {
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+/* Stay Green Section */
+.stay-green-card {
+  @apply relative overflow-hidden bg-white shadow-lg transition-all duration-300 transform rounded-xl;
+}
+
+.stay-green-card:hover {
+  @apply scale-105;
+}
+
+.stay-green-card img {
+  @apply w-full h-full object-cover transition-transform duration-300;
+}
+
+.stay-green-card:hover img {
+  @apply scale-110;
+}
+
+/* Activities Section */
+.activities-card {
+  @apply relative overflow-hidden bg-white shadow-lg transition-all duration-300 transform rounded-full;
+}
+
+.activities-card:hover {
+  @apply scale-105;
+}
+
+.activities-card img {
+  @apply w-full h-full object-cover transition-transform duration-300;
+}
+
+.activities-card:hover img {
+  @apply scale-110;
+}
+
+.activities-card .card-content {
+  @apply absolute inset-0 flex flex-col items-center justify-center text-white p-6;
+  background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background for better text visibility */
+}
+
+.activities-card .card-content h2 {
+  @apply text-2xl font-bold mb-4;
+}
+
+.activities-card .card-content p {
+  @apply hidden;
+}
+
+.activities-card:hover .card-content p {
+  @apply block bg-primary-dark px-4 py-2 rounded-full;
 }
