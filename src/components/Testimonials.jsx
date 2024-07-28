@@ -4,40 +4,40 @@ import 'aos/dist/aos.css';
 
 const testimonials = [
   {
-    name: 'John Doe',
-    text: 'Maverick Trails offers an exceptional travel experience with a strong focus on sustainability. Highly recommended!',
+    name: 'Sonu',
+    text: '😃',
     rating: 5,
-    image: 'https://via.placeholder.com/150'
+    image: 'src/assets/zomato-viral-guy.jpg'
   },
   {
-    name: 'Jane Smith',
-    text: 'An unforgettable journey! The eco-friendly approach of Maverick Trails made our vacation even more special.',
+    name: 'Kachra Seth',
+    text: '150 Rupiya dega',
     rating: 4,
-    image: 'https://via.placeholder.com/150'
+    image: 'src/assets/kachra-seth.jpg'
   },
   {
     name: 'Puneet Superstar',
     text: 'Yaaaay',
     rating: 5,
-    image: 'https://via.placeholder.com/150'
+    image: 'src/assets/puneet.jpeg'
   },
   {
     name: 'Deepak Kalal',
     text: 'Rom Rom Bhaiyo',
     rating: 4,
-    image: 'https://via.placeholder.com/150'
+    image: 'src/assets/deepak.jpg'
   },
   {
     name: 'Bhupinder Jogi',
     text: 'Bhupinder Jogi.',
     rating: 5,
-    image: 'https://via.placeholder.com/150'
+    image: 'src/assets/bhupinder-jogi.jpeg'
   },
   {
     name: 'Hindustani Bhau',
     text: 'Ruk abhi batata hai mai',
     rating: 4,
-    image: 'https://via.placeholder.com/150'
+    image: 'src/assets/hindustani-bhau.jpeg'
   },
 ];
 

@@ -16,6 +16,10 @@ import TeamSection from './components/TeamSection';
 import Contact from './components/Contact';
 import Testimonials from './components/Testimonials';
 import { useNavigate } from 'react-router-dom';
+import ExploreIndia from './components/ExploreIndia';
+import NorthIndia from './india/NorthIndia';
+import StayGreen from './stays/StayGreen';
+import Activities from './activities/activities';
 
 const AppContent = () => {
   const location = useLocation();
@@ -41,6 +45,15 @@ const AppContent = () => {
             <section id="hero">
               <Hero />
             </section>
+            <section id="explore-india">
+              <ExploreIndia />
+            </section>
+            <section id="stay-green">
+              <StayGreen/>
+              </section>
+              <section id="activities">
+              <Activities/>
+              </section>
             <section id="features">
               <Features />
             </section>
@@ -60,6 +73,7 @@ const AppContent = () => {
         <Route path="/our-team" element={<TeamSection />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
+        <Route path="north-india" element={<NorthIndia />} />
       </Routes>
     </div>
   );

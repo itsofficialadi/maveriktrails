@@ -17,7 +17,7 @@ const Footer = () => {
           <a href="/about" className="text-secondary hover:text-primary">About</a>
           <a href="#" className="text-secondary hover:text-primary">Services</a>
           <a href="/our-team" className="text-secondary hover:text-primary">Team</a>
-          <a href="#" className="text-secondary hover:text-primary">Contact</a>
+          <a href="/contact" className="text-secondary hover:text-primary">Contact</a>
         </div>
         <div className="text-center text-secondary">
           <p>&copy; 2024 MaverickTrails. All rights reserved</p>

@@ -1,7 +1,11 @@
 /* index.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Import Dancing Script font */
+
 
 
 
@@ -118,4 +122,48 @@ body {
   white-space: nowrap;
   will-change: transform;
   animation: marquee 15s linear infinite;
+}
+/*explore india*/
+.font-display {
+  font-family: 'Poppins', sans-serif;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #4CAF50, #388E3C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Additional utility classes */
+.group:hover .group-hover\:scale-105 {
+  transform: scale(1.05);
+}
+
+.group:hover .group-hover\:opacity-100 {
+  opacity: 1;
+}
+
+.group:hover .group-hover\:bg-opacity-70 {
+  background-opacity: 0.7;
+}
+
+.bg-primary {
+  background-color: #4CAF50;
+}
+
+.bg-primary-dark {
+  background-color: #388E3C;
+}
+
+.hover\:bg-primary-dark:hover {
+  background-color: #388E3C;
+}
+
+group:hover .group-hover\:block {
+  display: block;
+}
+
+/* Clip shape for cards */
+.clip-shape {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
