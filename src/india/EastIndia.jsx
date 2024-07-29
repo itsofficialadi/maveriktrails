@@ -50,7 +50,7 @@ const destinations = [
   {
     image: cooch,
     title: 'Cooch, West Bengal',
-    description: 'Known for its houseboats and gardens, Srinagar emphasizes sustainability with eco-friendly houseboat operators and conservation efforts to preserve its unique aquatic and garden ecosystems.',
+    description: 'This historic town is focusing on sustainable tourism with eco-friendly accommodations and conservation initiatives to preserve its heritage and natural surroundings.',
   },
 ];
 
