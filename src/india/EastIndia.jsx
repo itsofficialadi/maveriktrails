@@ -1,64 +1,64 @@
 import React from 'react';
 import 'aos/dist/aos.css';
 
-// Sample images for North India
-import rishikesh from '/src/india/NorthIMG/rishikesh-min.jpg';
-import manali from '/src/india/NorthIMG/manali-min.jpg';
-import gulmarg from '/src/india/NorthIMG/gulmarg-min.jpg';
-import haridwar from '/src/india/NorthIMG/Haridwar-min.jpg';
-import leh from '/src/india/NorthIMG/leh-min.jpg';
-import mcleodganj from '/src/india/NorthIMG/mcleodganj-min.jpg';
-import nanital from '/src/india/NorthIMG/nanital-min.jpg';
-import srinagar from '/src/india/NorthIMG/srinagar-min.jpg';
+// Sample images for East India
+import majuli from '/src\india\EastIMG\Majuli.jpg';
+import Patratu from '/src/india/EastIMG/Patratu.jpg';
+import Puri from '/src/india/EasthIMG/Puri.jpg';
+import Shilong from '/src/india/EastIMG/Shilong.jpg';
+import SikkimFarming from '/src/india/EastIMG/sikkimfarming.jpg';
+import Jorhat from '/src/india/EasthIMG/Jorhat.jpg';
+import bhubaneswar from '/src/india/EastIMG/Bhubaneswar.jpg';
+import cooch from '/src/india/EastIMG/Cooch.jpg';
 
 const destinations = [
   {
-    image: rishikesh,
-    title: 'Rishikesh, Uttarakhand',
-    description: 'Famous for yoga and spiritual retreats, Rishikesh promotes eco-tourism with organic eateries, green lodges, and river conservation efforts.',
+    image: majuli,
+    title: 'Majuli Island, Assam',
+    description: 'This river island is dedicated to preserving its unique ecology and cultural heritage through sustainable tourism practices and community involvement in conservation efforts.',
   },
   {
-    image: manali,
-    title: 'Manali, Himachal Pradesh',
-    description: 'Known for its beautiful landscapes and eco-friendly tourism practices, including sustainable accommodations and waste management initiatives.',
+    image: Patratu,
+    title: 'Partratu, Jharkhand',
+    description: 'The capital city of Jharkhand, Ranchi is developing its eco-tourism sector with green hotels and initiatives aimed at preserving its natural beauty and promoting sustainable practices.',
   },
   {
-    image: gulmarg,
-    title: 'Gulmarg, Kashmir',
-    description: 'A popular ski resort committed to maintaining its natural beauty through sustainable practices, including waste management and eco-friendly accommodations.',
+    image: Puri,
+    title: 'Puri, Odisha',
+    description: 'Puri focuses on sustainable tourism by promoting beach conservation and responsible travel practices. The city is involved in maintaining the cleanliness of its beaches and local environment.',
   },
   {
-    image: haridwar,
-    title: 'Haridwar, Uttarakhand',
-    description: 'A significant pilgrimage site on the banks of the Ganges, Haridwar is committed to maintaining the river\'s cleanliness and promoting sustainable practices.',
+    image: Shilong,
+    title: 'Shilong, Meghalaya',
+    description: ' Nestled in the hills, Shillong is known for its commitment to eco-tourism and sustainability, with green accommodations and efforts to preserve its natural beauty.',
   },
   {
-    image: leh,
-    title: 'Leh, Ladakh',
-    description: 'Leh, the capital of Ladakh, is a pioneer in eco-tourism with a focus on protecting its fragile high-altitude environment through solar-powered accommodations and waste management systems.',
+    image: SikkimFarming,
+    title: 'Sikkim',
+    description: 'The entire state of Sikkim is a model for eco-tourism with its commitment to organic farming, conservation, and green energy. The state has implemented various sustainable practices across its tourism sector.',
   },
   {
-    image: mcleodganj,
-    title: 'McLeod Ganj, Himachal Pradesh',
-    description: 'Known for its Tibetan culture and spirituality, McLeod Ganj supports sustainable tourism with eco-friendly guesthouses and conservation projects.',
+    image: Jorhat,
+    title: 'Jorhat, Assam',
+    description: 'An important gateway to tea plantations and wildlife sanctuaries, Jorhat promotes eco-tourism with sustainable practices in its tea estates and conservation efforts in nearby areas.',
   },
   {
-    image: nanital,
-    title: 'Nainital, Uttarakhand',
-    description: 'Known for its picturesque lake, Nainital promotes sustainable tourism with eco-friendly hotels and initiatives aimed at preserving the lake and surrounding forests.',
+    image: bhubaneswar,
+    title: 'Bhubaneswar, Odisha',
+    description: ' Known for its historic temples and green spaces, Bhubaneswar is adopting eco-friendly practices in tourism and urban planning to enhance sustainability.',
   },
   {
-    image: srinagar,
-    title: 'Srinagar, Jammu & Kashmir',
+    image: cooch,
+    title: 'Cooch, West Bengal',
     description: 'Known for its houseboats and gardens, Srinagar emphasizes sustainability with eco-friendly houseboat operators and conservation efforts to preserve its unique aquatic and garden ecosystems.',
   },
 ];
 
-const NorthIndia = () => {
+const EastIndia = () => {
   return (
     <div className="min-h-screen bg-gray-100 py-12 px-6">
       <h1 className="text-4xl font-bold text-center mb-12 gradient-text font-display" data-aos="fade-up">
-        North India
+        East India
       </h1>
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
         {destinations.map((dest, index) => (
@@ -79,4 +79,4 @@ const NorthIndia = () => {
   );
 };
 
-export default NorthIndia;
+export default EastIndia;

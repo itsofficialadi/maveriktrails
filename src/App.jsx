@@ -20,6 +20,7 @@ import Testimonials from './components/Testimonials';
 import { useNavigate } from 'react-router-dom';
 import ExploreIndia from './components/ExploreIndia';
 import NorthIndia from './india/NorthIndia';
+import EastIndia from './india/EastIndia';
 import StayGreen from './stays/StayGreen';
 import Activities from './activities/activities';
 import ExperienceNature from './components/ExperienceNature';
@@ -80,6 +81,7 @@ const AppContent = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/north-india" element={<NorthIndia />} />
+        <Route path="/east-india" element={<EastIndia />} />
       </Routes>
     </div>
   );
