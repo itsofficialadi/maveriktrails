@@ -2,12 +2,12 @@ import React from 'react';
 import 'aos/dist/aos.css';
 
 // Sample images for East India
-import majuli from '/src\india\EastIMG\Majuli.jpg';
+import majuli from '/src/india/EastIMG/Majuli.jpg';
 import Patratu from '/src/india/EastIMG/Patratu.jpg';
-import Puri from '/src/india/EasthIMG/Puri.jpg';
-import Shilong from '/src/india/EastIMG/Shilong.jpg';
-import SikkimFarming from '/src/india/EastIMG/sikkimfarming.jpg';
-import Jorhat from '/src/india/EasthIMG/Jorhat.jpg';
+import Puri from '/src/india/EastIMG/Puri.jpg';
+import Shilong from '/src/india/EastIMG/Shillong.jpg';
+import SikkimFarming from '/src/india/EastIMG/SikkimFarming.jpg';
+import Jorhat from '/src/india/EastIMG/Jorhat.jpg';
 import bhubaneswar from '/src/india/EastIMG/Bhubaneswar.jpg';
 import cooch from '/src/india/EastIMG/Cooch.jpg';
 
