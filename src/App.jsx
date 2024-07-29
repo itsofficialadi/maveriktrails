@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/hero';
@@ -77,7 +79,7 @@ const AppContent = () => {
         <Route path="/our-team" element={<TeamSection />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
-        <Route path="north-india" element={<NorthIndia />} />
+        <Route path="/north-india" element={<NorthIndia />} />
       </Routes>
     </div>
   );
