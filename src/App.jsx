@@ -23,6 +23,9 @@ import NorthIndia from './india/NorthIndia';
 import StayGreen from './stays/StayGreen';
 import Activities from './activities/activities';
 import ExperienceNature from './components/ExperienceNature';
+import SouthIndia from './india/SouthIndia';
+import WestIndia from './india/WestIndia';
+import CentralIndia from './india/CentralIndia';
 
 const AppContent = () => {
   const location = useLocation();
@@ -80,6 +83,9 @@ const AppContent = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/north-india" element={<NorthIndia />} />
+        <Route path="/south-india" element={<SouthIndia />} />
+        <Route path="/west-india" element={<WestIndia />} />
+        <Route path="/central-india" element={<CentralIndia />} />
       </Routes>
     </div>
   );

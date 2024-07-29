@@ -1,64 +1,64 @@
 import React from 'react';
 import 'aos/dist/aos.css';
 
-// Sample images for North India
-import rishikesh from '/src/india/NorthIMG/rishikesh-min.jpg';
-import manali from '/src/india/NorthIMG/manali-min.jpg';
-import gulmarg from '/src/india/NorthIMG/gulmarg-min.jpg';
-import haridwar from '/src/india/NorthIMG/Haridwar-min.jpg';
-import leh from '/src/india/NorthIMG/leh-min.jpg';
-import mcleodganj from '/src/india/NorthIMG/mcleodganj-min.jpg';
-import nanital from '/src/india/NorthIMG/nanital-min.jpg';
-import srinagar from '/src/india/NorthIMG/srinagar-min.jpg';
+// Sample images for Central India
+import bandhavgarh from '/src/india/CentralIMG/bandhavgarh-min.jpeg';
+import gwalior from '/src/india/CentralIMG/gwalior-min.jpeg';
+import kanger from '/src/india/CentralIMG/kanger-valley-national-park-min.jpeg';
+import pachmarhi from '/src/india/CentralIMG/pachmari-min.jpeg';
+import sanchi from '/src/india/CentralIMG/sanchi-min.jpeg';
+import sanjay from '/src/india/CentralIMG/sanjay-dubri-tiger-reserve-min.jpeg';
+import satpura from '/src/india/CentralIMG/Satpura-min.jpeg';
+import sirpur from '/src/india/CentralIMG/Sirpur-min.jpeg';
 
 const destinations = [
   {
-    image: rishikesh,
-    title: 'Rishikesh, Uttarakhand',
-    description: 'Famous for yoga and spiritual retreats, Rishikesh promotes eco-tourism with organic eateries, green lodges, and river conservation efforts.',
+    image: bandhavgarh,
+    title: 'Bandhavgarh National Park, Madhya Pradesh',
+    description: 'Home to a large population of Bengal tigers, Bandhavgarh promotes eco-tourism through sustainable safari practices and wildlife conservation efforts.',
   },
   {
-    image: manali,
-    title: 'Manali, Himachal Pradesh',
-    description: 'Known for its beautiful landscapes and eco-friendly tourism practices, including sustainable accommodations and waste management initiatives.',
+    image: gwalior,
+    title: 'Gwalior, Madhya Pradesh',
+    description: 'Known for its majestic fort and rich history, Gwalior supports sustainable tourism by preserving its historical monuments and promoting eco-friendly travel.',
   },
   {
-    image: gulmarg,
-    title: 'Gulmarg, Kashmir',
-    description: 'A popular ski resort committed to maintaining its natural beauty through sustainable practices, including waste management and eco-friendly accommodations.',
+    image: kanger,
+    title: 'Kanger Valley National Park, Chhattisgarh',
+    description: 'A biodiversity hotspot with unique limestone caves and rich flora and fauna, Kanger Valley promotes eco-tourism through conservation and responsible travel.',
   },
   {
-    image: haridwar,
-    title: 'Haridwar, Uttarakhand',
-    description: 'A significant pilgrimage site on the banks of the Ganges, Haridwar is committed to maintaining the river\'s cleanliness and promoting sustainable practices.',
+    image: pachmarhi,
+    title: 'Pachmarhi, Madhya Pradesh',
+    description: 'A picturesque hill station in the Satpura Range, Pachmarhi emphasizes sustainable tourism with eco-friendly accommodations and conservation of its natural beauty.',
   },
   {
-    image: leh,
-    title: 'Leh, Ladakh',
-    description: 'Leh, the capital of Ladakh, is a pioneer in eco-tourism with a focus on protecting its fragile high-altitude environment through solar-powered accommodations and waste management systems.',
+    image: sanchi,
+    title: 'Sanchi, Madhya Pradesh',
+    description: 'Famous for its ancient stupas and Buddhist monuments, Sanchi promotes sustainable tourism through the preservation of its archaeological heritage.',
   },
   {
-    image: mcleodganj,
-    title: 'McLeod Ganj, Himachal Pradesh',
-    description: 'Known for its Tibetan culture and spirituality, McLeod Ganj supports sustainable tourism with eco-friendly guesthouses and conservation projects.',
+    image: sanjay,
+    title: 'Sanjay-Dubri Tiger Reserve, Madhya Pradesh',
+    description: 'A significant tiger habitat, the Sanjay-Dubri Tiger Reserve focuses on wildlife conservation and sustainable eco-tourism practices.',
   },
   {
-    image: nanital,
-    title: 'Nainital, Uttarakhand',
-    description: 'Known for its picturesque lake, Nainital promotes sustainable tourism with eco-friendly hotels and initiatives aimed at preserving the lake and surrounding forests.',
+    image: satpura,
+    title: 'Satpura National Park, Madhya Pradesh',
+    description: 'Known for its diverse wildlife and beautiful landscapes, Satpura National Park promotes eco-tourism with sustainable safari experiences and conservation initiatives.',
   },
   {
-    image: srinagar,
-    title: 'Srinagar, Jammu & Kashmir',
-    description: 'Known for its houseboats and gardens, Srinagar emphasizes sustainability with eco-friendly houseboat operators and conservation efforts to preserve its unique aquatic and garden ecosystems.',
+    image: sirpur,
+    title: 'Sirpur, Chhattisgarh',
+    description: 'An ancient town with significant archaeological sites, Sirpur supports sustainable tourism by preserving its historical artifacts and promoting responsible travel.',
   },
 ];
 
-const NorthIndia = () => {
+const CentralIndia = () => {
   return (
     <div className="min-h-screen bg-gray-100 py-12 px-6">
       <h1 className="text-4xl font-bold text-center mb-12 gradient-text font-display" data-aos="fade-up">
-        North India
+        Central India
       </h1>
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
         {destinations.map((dest, index) => (
@@ -79,4 +79,4 @@ const NorthIndia = () => {
   );
 };
 
-export default NorthIndia;
+export default CentralIndia;
