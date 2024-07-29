@@ -145,7 +145,7 @@ const Hero = () => {
       <div className="relative bg-background text-black p-10 mt-10" data-aos="fade-up">
         <h1
           ref={headingRef}
-          className="text-4xl md:text-8xl lg:text-10xl font-display font-bold mb-6 text-primary absolute top-0 left-0 w-full"
+          className="text-4xl md:text-6xl lg:text-10xl font-display font-bold mb-6 text-primary absolute top-0 left-0 w-full"
           style={{ top: '0', paddingTop: '1rem' }}
         >
           Welcome to Maverick Trails

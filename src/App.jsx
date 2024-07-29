@@ -20,6 +20,7 @@ import ExploreIndia from './components/ExploreIndia';
 import NorthIndia from './india/NorthIndia';
 import StayGreen from './stays/StayGreen';
 import Activities from './activities/activities';
+import ExperienceNature from './components/ExperienceNature';
 
 const AppContent = () => {
   const location = useLocation();
@@ -53,6 +54,9 @@ const AppContent = () => {
               </section>
               <section id="activities">
               <Activities/>
+              <section id="experience-nature">
+              <ExperienceNature/>
+              </section>
               </section>
             <section id="features">
               <Features />

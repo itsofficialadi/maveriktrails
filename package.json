@@ -21,6 +21,7 @@
     "bootstrap": "^5.3.3",
     "chart.js": "^4.4.3",
     "classnames": "^2.5.1",
+    "framer-motion": "^11.3.19",
     "gsap": "^3.12.5",
     "lottie-react": "^2.4.0",
     "lottie-web": "^5.12.2",
