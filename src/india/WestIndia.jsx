@@ -1,64 +1,64 @@
 import React from 'react';
 import 'aos/dist/aos.css';
 
-// Sample images for North India
-import rishikesh from '/src/india/NorthIMG/rishikesh-min.jpg';
-import manali from '/src/india/NorthIMG/manali-min.jpg';
-import gulmarg from '/src/india/NorthIMG/gulmarg-min.jpg';
-import haridwar from '/src/india/NorthIMG/Haridwar-min.jpg';
-import leh from '/src/india/NorthIMG/leh-min.jpg';
-import mcleodganj from '/src/india/NorthIMG/mcleodganj-min.jpg';
-import nanital from '/src/india/NorthIMG/nanital-min.jpg';
-import srinagar from '/src/india/NorthIMG/srinagar-min.jpg';
+// Sample images for West India
+import alibaug from '/src/india/WestIND/alibaug-min.jpeg';
+import daman from '/src/india/WestIND/daman-min.jpeg';
+import goa from '/src/india/WestIND/goa-min.jpg';
+import jaisalmer from '/src/india/WestIND/jaisalmer-min.jpeg';
+import khandala from '/src/india/WestIND/khandala-min.jpeg';
+import matheran from '/src/india/WestIND/Matheran-min.jpeg';
+import mount from '/src/india/WestIND/mount-abu-min.jpeg';
+import udaipur from '/src/india/WestIND/udaipur-min.jpeg';
 
 const destinations = [
   {
-    image: rishikesh,
-    title: 'Rishikesh, Uttarakhand',
-    description: 'Famous for yoga and spiritual retreats, Rishikesh promotes eco-tourism with organic eateries, green lodges, and river conservation efforts.',
+    image: alibaug,
+    title: 'Alibaug, Maharashtra',
+    description: 'Known for its beaches and historic forts, Alibaug promotes eco-friendly tourism with sustainable lodging and clean beach initiatives.',
   },
   {
-    image: manali,
-    title: 'Manali, Himachal Pradesh',
-    description: 'Known for its beautiful landscapes and eco-friendly tourism practices, including sustainable accommodations and waste management initiatives.',
+    image: daman,
+    title: 'Daman, Daman and Diu',
+    description: 'A coastal town famous for its beaches and colonial architecture, Daman emphasizes sustainable tourism by preserving its natural and cultural heritage.',
   },
   {
-    image: gulmarg,
-    title: 'Gulmarg, Kashmir',
-    description: 'A popular ski resort committed to maintaining its natural beauty through sustainable practices, including waste management and eco-friendly accommodations.',
+    image: goa,
+    title: 'Goa',
+    description: 'Renowned for its beaches, nightlife, and Portuguese heritage, Goa promotes eco-tourism through sustainable beach management and conservation projects.',
   },
   {
-    image: haridwar,
-    title: 'Haridwar, Uttarakhand',
-    description: 'A significant pilgrimage site on the banks of the Ganges, Haridwar is committed to maintaining the river\'s cleanliness and promoting sustainable practices.',
+    image: jaisalmer,
+    title: 'Jaisalmer, Rajasthan',
+    description: 'Known as the Golden City, Jaisalmer focuses on preserving its desert ecosystem and historic forts through sustainable tourism practices.',
   },
   {
-    image: leh,
-    title: 'Leh, Ladakh',
-    description: 'Leh, the capital of Ladakh, is a pioneer in eco-tourism with a focus on protecting its fragile high-altitude environment through solar-powered accommodations and waste management systems.',
+    image: khandala,
+    title: 'Khandala, Maharashtra',
+    description: 'A popular hill station near Mumbai, Khandala emphasizes eco-friendly tourism by promoting conservation of its natural landscapes and biodiversity.',
   },
   {
-    image: mcleodganj,
-    title: 'McLeod Ganj, Himachal Pradesh',
-    description: 'Known for its Tibetan culture and spirituality, McLeod Ganj supports sustainable tourism with eco-friendly guesthouses and conservation projects.',
+    image: matheran,
+    title: 'Matheran, Maharashtra',
+    description: 'Asia’s only automobile-free hill station, Matheran is committed to preserving its environment through sustainable tourism practices.',
   },
   {
-    image: nanital,
-    title: 'Nainital, Uttarakhand',
-    description: 'Known for its picturesque lake, Nainital promotes sustainable tourism with eco-friendly hotels and initiatives aimed at preserving the lake and surrounding forests.',
+    image: mount,
+    title: 'Mount Abu, Rajasthan',
+    description: 'The only hill station in Rajasthan, Mount Abu promotes eco-friendly tourism through conservation efforts and sustainable accommodations.',
   },
   {
-    image: srinagar,
-    title: 'Srinagar, Jammu & Kashmir',
-    description: 'Known for its houseboats and gardens, Srinagar emphasizes sustainability with eco-friendly houseboat operators and conservation efforts to preserve its unique aquatic and garden ecosystems.',
+    image: udaipur,
+    title: 'Udaipur, Rajasthan',
+    description: 'Known as the City of Lakes, Udaipur emphasizes sustainable tourism by preserving its lakes and historical sites through various conservation initiatives.',
   },
 ];
 
-const NorthIndia = () => {
+const WestIndia = () => {
   return (
     <div className="min-h-screen bg-gray-100 py-12 px-6">
       <h1 className="text-4xl font-bold text-center mb-12 gradient-text font-display" data-aos="fade-up">
-        North India
+        West India
       </h1>
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
         {destinations.map((dest, index) => (
@@ -79,4 +79,4 @@ const NorthIndia = () => {
   );
 };
 
-export default NorthIndia;
+export default WestIndia;

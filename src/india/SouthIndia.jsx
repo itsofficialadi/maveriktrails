@@ -1,64 +1,64 @@
 import React from 'react';
 import 'aos/dist/aos.css';
 
-// Sample images for North India
-import rishikesh from '/src/india/NorthIMG/rishikesh-min.jpg';
-import manali from '/src/india/NorthIMG/manali-min.jpg';
-import gulmarg from '/src/india/NorthIMG/gulmarg-min.jpg';
-import haridwar from '/src/india/NorthIMG/Haridwar-min.jpg';
-import leh from '/src/india/NorthIMG/leh-min.jpg';
-import mcleodganj from '/src/india/NorthIMG/mcleodganj-min.jpg';
-import nanital from '/src/india/NorthIMG/nanital-min.jpg';
-import srinagar from '/src/india/NorthIMG/srinagar-min.jpg';
+// Sample images for South India
+import auroville from '/src/india/SouthIMG/auroville-village-min.jpg';
+import coorg from '/src/india/SouthIMG/coorg-min.jpeg';
+import hampi from '/src/india/SouthIMG/hampi-min.jpg';
+import kumarakom from '/src/india/SouthIMG/Kumarakom-min.jpeg';
+import munnar from '/src/india/SouthIMG/munnar-min.jpg';
+import mysore from '/src/india/SouthIMG/Mysore-min.jpg';
+import ooty from '/src/india/SouthIMG/ooty-min.jpg';
+import pondicherry from '/src/india/SouthIMG/Pondicherry-min.png';
 
 const destinations = [
   {
-    image: rishikesh,
-    title: 'Rishikesh, Uttarakhand',
-    description: 'Famous for yoga and spiritual retreats, Rishikesh promotes eco-tourism with organic eateries, green lodges, and river conservation efforts.',
+    image: auroville,
+    title: 'Auroville, Tamil Nadu',
+    description: 'Auroville is an experimental township dedicated to the ideal of human unity, emphasizing sustainable living and ecological practices.',
   },
   {
-    image: manali,
-    title: 'Manali, Himachal Pradesh',
-    description: 'Known for its beautiful landscapes and eco-friendly tourism practices, including sustainable accommodations and waste management initiatives.',
+    image: coorg,
+    title: 'Coorg, Karnataka',
+    description: 'Coorg, known as the Scotland of India, is famous for its coffee plantations and eco-friendly tourism practices that promote conservation and community involvement.',
   },
   {
-    image: gulmarg,
-    title: 'Gulmarg, Kashmir',
-    description: 'A popular ski resort committed to maintaining its natural beauty through sustainable practices, including waste management and eco-friendly accommodations.',
+    image: hampi,
+    title: 'Hampi, Karnataka',
+    description: 'A UNESCO World Heritage Site, Hampi focuses on preserving its ancient ruins while promoting sustainable tourism to minimize environmental impact.',
   },
   {
-    image: haridwar,
-    title: 'Haridwar, Uttarakhand',
-    description: 'A significant pilgrimage site on the banks of the Ganges, Haridwar is committed to maintaining the river\'s cleanliness and promoting sustainable practices.',
+    image: kumarakom,
+    title: 'Kumarakom, Kerala',
+    description: 'Kumarakom is a cluster of small islands famous for its backwaters, promoting eco-tourism through responsible travel and conservation efforts.',
   },
   {
-    image: leh,
-    title: 'Leh, Ladakh',
-    description: 'Leh, the capital of Ladakh, is a pioneer in eco-tourism with a focus on protecting its fragile high-altitude environment through solar-powered accommodations and waste management systems.',
+    image: munnar,
+    title: 'Munnar, Kerala',
+    description: 'Munnar, known for its tea plantations, practices sustainable tourism by promoting organic farming and eco-friendly lodging options.',
   },
   {
-    image: mcleodganj,
-    title: 'McLeod Ganj, Himachal Pradesh',
-    description: 'Known for its Tibetan culture and spirituality, McLeod Ganj supports sustainable tourism with eco-friendly guesthouses and conservation projects.',
+    image: mysore,
+    title: 'Mysore, Karnataka',
+    description: 'Mysore, known for its rich cultural heritage, supports sustainable tourism by preserving its historical sites and promoting green practices among its tourism industry.',
   },
   {
-    image: nanital,
-    title: 'Nainital, Uttarakhand',
-    description: 'Known for its picturesque lake, Nainital promotes sustainable tourism with eco-friendly hotels and initiatives aimed at preserving the lake and surrounding forests.',
+    image: ooty,
+    title: 'Ooty, Tamil Nadu',
+    description: 'Ooty, a popular hill station, emphasizes sustainable tourism by promoting eco-friendly accommodations and waste management initiatives.',
   },
   {
-    image: srinagar,
-    title: 'Srinagar, Jammu & Kashmir',
-    description: 'Known for its houseboats and gardens, Srinagar emphasizes sustainability with eco-friendly houseboat operators and conservation efforts to preserve its unique aquatic and garden ecosystems.',
+    image: pondicherry,
+    title: 'Pondicherry, Puducherry',
+    description: 'Pondicherry combines French colonial architecture with Indian traditions, supporting sustainable tourism through conservation of its cultural heritage and natural resources.',
   },
 ];
 
-const NorthIndia = () => {
+const SouthIndia = () => {
   return (
     <div className="min-h-screen bg-gray-100 py-12 px-6">
       <h1 className="text-4xl font-bold text-center mb-12 gradient-text font-display" data-aos="fade-up">
-        North India
+        South India
       </h1>
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
         {destinations.map((dest, index) => (
@@ -79,4 +79,4 @@ const NorthIndia = () => {
   );
 };
 
-export default NorthIndia;
+export default SouthIndia;
