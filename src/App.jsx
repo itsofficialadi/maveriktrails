@@ -35,6 +35,7 @@ import Trek from './activities/Trek';
 import Safari from './activities/Safari';
 import EcoWaterActivities from './activities/WaterActivities';
 import EcoHomestays from './stays/HomeStays';
+import PrivacyPolicy from './components/PrivacyPolicy';
 
 const AppContent = () => {
   const location = useLocation();
@@ -91,6 +92,7 @@ const AppContent = () => {
         <Route path="/our-team" element={<TeamSection />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/north-india" element={<NorthIndia />} />
         <Route path="/east-india" element={<EastIndia />} />
         <Route path="/west-india" element={<WestIndia />} />

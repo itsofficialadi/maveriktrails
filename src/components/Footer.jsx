@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="flex justify-center space-x-8 mb-4">
           <a href="/" className="text-secondary hover:text-primary">Home</a>
           <a href="/about" className="text-secondary hover:text-primary">About</a>
-          <a href="#" className="text-secondary hover:text-primary">Services</a>
+          <a href="privacy-policy" className="text-secondary hover:text-primary">Privacy & Policy</a>
           <a href="/our-team" className="text-secondary hover:text-primary">Team</a>
           <a href="/contact" className="text-secondary hover:text-primary">Contact</a>
         </div>
