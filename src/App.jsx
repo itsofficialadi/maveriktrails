@@ -34,6 +34,7 @@ import EcoVillages from './experiences/EcoVillages';
 import Trek from './activities/Trek';
 import Safari from './activities/Safari';
 import EcoWaterActivities from './activities/WaterActivities';
+import EcoHomestays from './stays/HomeStays';
 
 const AppContent = () => {
   const location = useLocation();
@@ -103,6 +104,7 @@ const AppContent = () => {
         <Route path="/trekking-hiking" element={<Trek />} />
         <Route path="/wildlife-safaris" element={<Safari />} />
         <Route path="/water-activities" element={<EcoWaterActivities />} />
+        <Route path="/homestays" element={<EcoHomestays />} />
       </Routes>
     </div>
   );
