@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -27,6 +26,8 @@ import CentralIndia from './india/CentralIndia';
 import StayGreen from './stays/StayGreen';
 import Activities from './activities/activities';
 import ExperienceNature from './components/ExperienceNature';
+import EcoFriendlyResorts from './stays/EcoFriendlyResorts';
+import FarmStays from './stays/StaysIMG/FarmStays';
 
 const AppContent = () => {
   const location = useLocation();
@@ -88,6 +89,8 @@ const AppContent = () => {
         <Route path="/west-india" element={<WestIndia />} />
         <Route path="/south-india" element={<SouthIndia />} />
         <Route path="/central-india" element={<CentralIndia />} />
+        <Route path="/eco-friendly-resorts" element={<EcoFriendlyResorts />} />
+        <Route path="/farm-stays" element={<FarmStays />} />
       </Routes>
     </div>
   );
