@@ -28,6 +28,9 @@ import Activities from './activities/activities';
 import ExperienceNature from './components/ExperienceNature';
 import EcoFriendlyResorts from './stays/EcoFriendlyResorts';
 import FarmStays from './stays/StaysIMG/FarmStays';
+import NationalParks from './experiences/NationalPark';
+import WildlifeSanctuaries from './experiences/WildlifeSanctuaries';
+import EcoVillages from './experiences/EcoVillages';
 
 const AppContent = () => {
   const location = useLocation();
@@ -91,6 +94,9 @@ const AppContent = () => {
         <Route path="/central-india" element={<CentralIndia />} />
         <Route path="/eco-friendly-resorts" element={<EcoFriendlyResorts />} />
         <Route path="/farm-stays" element={<FarmStays />} />
+        <Route path="/national-parks" element={<NationalParks />} />
+        <Route path="/wildlife-sanctuaries" element={<WildlifeSanctuaries />} />
+        <Route path="/eco-villages" element={<EcoVillages />} />
       </Routes>
     </div>
   );
