@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
+import ScrollToTop from './components/ScrollToTop.jsx';
 import 'aos/dist/aos.css';
 import { BrowserRouter as Router, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/hero';
-import Features from './components/Features';
 import TrustedBrands from './components/TrustedBrands';
 import Footer from './components/Footer';
 import About from './components/About';
@@ -74,9 +74,6 @@ const AppContent = () => {
                 <ExperienceNature />
               </section>
             </section>
-            <section id="features">
-              <Features />
-            </section>
             <section id="trusted-brands">
               <TrustedBrands />
             </section>
@@ -121,6 +118,7 @@ const App = () => {
       <div className="bg-background min-h-screen font-sans">
         <CustomCursor />
         <Navbar />
+        <ScrollToTop />
         <AppContent />
         <Footer />
       </div>

@@ -5,12 +5,12 @@ const TrustedBrands = () => {
     <div className="py-20">
       <div className="overflow-hidden whitespace-nowrap">
         <div className="inline-block animate-marquee">
-          {['microsoft', 'airbnb', 'google', 'ge', 'netflix', 'google-cloud'].map((brand, index) => (
+          {['ibm-sb-min', 'csrbox', 'ignou-logo', 'sti-logo', 'united-nations',].map((brand, index) => (
             <img
               key={index}
-              src={`/brands/${brand}.svg`}
+              src={`/brands/${brand}.png`}
               alt={brand}
-              className="h-12 mx-4 inline-block brand-logo"
+              className="h-16 mx-4 inline-block brand-logo"
             />
           ))}
         </div>

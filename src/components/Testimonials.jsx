@@ -11,19 +11,19 @@ const testimonials = [
   },
   {
     name: 'Kachra Seth',
-    text: '150 Rupiya dega',
+    text: 'Ek dum kadak travel plan hai',
     rating: 4,
     image: 'src/assets/kachra-seth.jpg'
   },
   {
     name: 'Puneet Superstar',
-    text: 'Yaaaay',
+    text: 'Yaaaay! Sustainable Travel',
     rating: 5,
     image: 'src/assets/puneet.jpeg'
   },
   {
     name: 'Deepak Kalal',
-    text: 'Rom Rom Bhaiyo',
+    text: 'Rom Rom Eco-Friendly Bhaiyo',
     rating: 4,
     image: 'src/assets/deepak.jpg'
   },
@@ -35,8 +35,8 @@ const testimonials = [
   },
   {
     name: 'Hindustani Bhau',
-    text: 'Ruk abhi batata hai mai',
-    rating: 4,
+    text: 'Pehli fursat mei Eco-friendly Trip',
+    rating: 5,
     image: 'src/assets/hindustani-bhau.jpeg'
   },
 ];

@@ -86,9 +86,6 @@ const Navbar = () => {
           <Link to="/carbon-footprint-calculator" className={`nav-link hover:text-primary-dark transition ${location.pathname === '/carbon-footprint-calculator' ? 'text-primary' : ''}`} onClick={closeMobileMenu}>Footprint Calculator</Link>
         </li>
         <li>
-          <Link to="/gallery" className={`nav-link hover:text-primary-dark transition ${location.pathname === '/gallery' ? 'text-primary' : ''}`} onClick={closeMobileMenu}>Gallery</Link>
-        </li>
-        <li>
           <a href="#testimonials" className={`nav-link hover:text-primary-dark transition ${location.pathname === '#testimonials' ? 'text-primary' : ''}`} onClick={(e) => handleLinkClick(e, 'testimonials')}>Testimonial</a>
         </li>
         <li>
@@ -117,9 +114,6 @@ const Navbar = () => {
         <ul className="flex flex-col items-center mt-10 text-black">
           <li className="w-full text-center py-4 border-b border-gray-200 bg-gray-100">
             <Link to="/carbon-footprint-calculator" className={`nav-link text-xl hover:text-primary-dark transition ${location.pathname === '/carbon-footprint-calculator' ? 'text-primary' : ''}`} onClick={closeMobileMenu}>Footprint Calculator</Link>
-          </li>
-          <li className="w-full text-center py-4 border-b border-gray-200 bg-gray-100">
-            <Link to="/gallery" className={`nav-link text-xl hover:text-primary-dark transition ${location.pathname === '/gallery' ? 'text-primary' : ''}`} onClick={closeMobileMenu}>Gallery</Link>
           </li>
           <li className="w-full text-center py-4 border-b border-gray-200 bg-gray-100">
             <a href="#testimonials" className={`nav-link text-xl hover:text-primary-dark transition ${location.pathname === '#testimonials' ? 'text-primary' : ''}`} onClick={(e) => handleLinkClick(e, 'testimonials')}>Testimonial</a>
