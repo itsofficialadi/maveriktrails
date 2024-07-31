@@ -4,11 +4,11 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const regions = [
-  { name: "North India", path: "/north-india", image: "src/assets/taj-mahal-min.jpeg" },
-  { name: "South India", path: "/south-india", image: "src/assets/hampi-min.jpg" },
-  { name: "East India", path: "/east-india", image: "src/assets/tibetian-flags-min.jpg" },
-  { name: "West India", path: "/west-india", image: "src/assets/jaipur-min.jpg" },
-  { name: "Central India", path: "/central-india", image: "src/assets/sanchi-min.jpg" },
+  { name: "North India", path: "/north-india", image: "/src/assets/taj-mahal-min.jpeg" },
+  { name: "South India", path: "/south-india", image: "/src/assets/hampi-min.jpg" },
+  { name: "East India", path: "/east-india", image: "/src/assets/tibetian-flags-min.jpg" },
+  { name: "West India", path: "/west-india", image: "/src/assets/jaipur-min.jpg" },
+  { name: "Central India", path: "/central-india", image: "/src/assets/sanchi-min.jpg" },
 ];
 
 const ExploreIndia = () => {
