@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import 'aos/dist/aos.css';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/hero';
 import Features from './components/Features';
@@ -16,7 +16,6 @@ import ResetPassword from './components/ResetPassword';
 import TeamSection from './components/TeamSection';
 import Contact from './components/Contact';
 import Testimonials from './components/Testimonials';
-import { useNavigate } from 'react-router-dom';
 import ExploreIndia from './components/ExploreIndia';
 import NorthIndia from './india/NorthIndia';
 import SouthIndia from './india/SouthIndia';
@@ -36,6 +35,7 @@ import Safari from './activities/Safari';
 import EcoWaterActivities from './activities/WaterActivities';
 import EcoHomestays from './stays/HomeStays';
 import PrivacyPolicy from './components/PrivacyPolicy';
+import NotFoundPage from './components/NotFoundPage';
 
 const AppContent = () => {
   const location = useLocation();
@@ -65,14 +65,14 @@ const AppContent = () => {
               <ExploreIndia />
             </section>
             <section id="stay-green">
-              <StayGreen/>
-              </section>
-              <section id="activities">
-              <Activities/>
+              <StayGreen />
+            </section>
+            <section id="activities">
+              <Activities />
               <section id="experience-nature">
-              <ExperienceNature/>
+                <ExperienceNature />
               </section>
-              </section>
+            </section>
             <section id="features">
               <Features />
             </section>
@@ -107,6 +107,7 @@ const AppContent = () => {
         <Route path="/wildlife-safaris" element={<Safari />} />
         <Route path="/water-activities" element={<EcoWaterActivities />} />
         <Route path="/homestays" element={<EcoHomestays />} />
+        <Route path="*" element={<NotFoundPage />} /> {/* Catch-all route for 404 */}
       </Routes>
     </div>
   );
