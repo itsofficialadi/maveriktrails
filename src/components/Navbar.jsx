@@ -74,7 +74,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''} flex justify-between items-center p-6 transition-all duration-300 bg-transparent`}>
       <Link to="/" className="text-black text-2xl font-bold">
-        <img src="src/assets/MaverikTrails-logo.png" alt="MaverickTrails Logo" className="h-12" />
+        <img src="./Maverick_trails-removebg-preview.png" alt="MaverickTrails Logo" className="h-12" />
       </Link>
       <div className="md:hidden">
         <button onClick={toggleMobileMenu} className="text-black focus:outline-none">
