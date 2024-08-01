@@ -6,7 +6,7 @@ import KeralaBackwatersImage from '/src/assets/kerala-backwaters-min.jpg';
 import AurovilleImage from '/src/assets/Auroville-min.jpg';
 import SikkimImage from '/src/assets/sikkim-min.jpg';
 
-const InfoPage = () => {
+const LearnMore = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
@@ -91,4 +91,4 @@ const InfoPage = () => {
   );
 };
 
-export default InfoPage;
+export default LearnMore;

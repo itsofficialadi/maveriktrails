@@ -36,7 +36,7 @@ import EcoWaterActivities from './activities/WaterActivities';
 import EcoHomestays from './stays/HomeStays';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import NotFoundPage from './components/NotFoundPage';
-import InfoPage from './components/LearnMore.jsx';
+import LearnMore from './components/LearnMore.jsx';
 
 const AppContent = () => {
   const location = useLocation();
@@ -105,7 +105,7 @@ const AppContent = () => {
         <Route path="/wildlife-safaris" element={<Safari />} />
         <Route path="/water-activities" element={<EcoWaterActivities />} />
         <Route path="/homestays" element={<EcoHomestays />} />
-        <Route path="/learn-more" element={<InfoPage/>} />
+        <Route path="/learn-more" element={<LearnMore />} />
         <Route path="*" element={<NotFoundPage />} /> {/* Catch-all route for 404 */}
       </Routes>
     </div>

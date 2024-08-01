@@ -6,6 +6,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { Link } from 'react-router-dom';
 
 // Register the GSAP ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -18,16 +19,13 @@ import coorg from '/src/assets/coorg-min.jpg';
 import himachalPradesh from '/src/assets/himachal-pradesh-min.jpg';
 
 const Hero = () => {
-  // References to the heading and paragraphs for animation
   const headingRef = useRef(null);
   const paragraphsRef = useRef(null);
 
-  // Initialize AOS for scroll animations
   useEffect(() => {
     AOS.init();
   }, []);
 
-  // GSAP animation for the heading
   useEffect(() => {
     const heading = headingRef.current;
 
@@ -49,7 +47,6 @@ const Hero = () => {
     );
   }, []);
 
-  // Carousel items data
   const carouselItems = [
     {
       src: sikkim,
@@ -93,7 +90,6 @@ const Hero = () => {
     },
   ];
 
-  // Custom arrow for previous button in the carousel
   const renderArrowPrev = (onClickHandler, hasPrev, label) =>
     hasPrev && (
       <button
@@ -106,7 +102,6 @@ const Hero = () => {
       </button>
     );
 
-  // Custom arrow for next button in the carousel
   const renderArrowNext = (onClickHandler, hasNext, label) =>
     hasNext && (
       <button
@@ -142,9 +137,9 @@ const Hero = () => {
             <div className="absolute bottom-10 left-10 bg-white bg-opacity-70 p-6 rounded-lg text-black max-w-md group-hover:bg-opacity-90 transition-all">
               <h2 className="text-3xl font-display font-bold">{item.title}</h2>
               <p className="mt-4">{item.description}</p>
-              <a href={item.path} className="inline-block mt-6 bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary-dark transition">
+              <Link to={item.path} className="inline-block mt-6 bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary-dark transition">
                 Learn More
-              </a>
+              </Link>
             </div>
           </div>
         ))}

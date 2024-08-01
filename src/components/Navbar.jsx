@@ -105,7 +105,7 @@ const Navbar = () => {
       <div className={`fixed inset-0 bg-white transform ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out z-50`}>
         <div className="flex justify-between items-center p-6 border-b border-gray-200">
           <Link to="/" className="text-black text-2xl font-bold" onClick={closeMobileMenu}>
-            <img src="src/assets/MaverikTrails-logo.png" alt="MaverickTrails Logo" className="h-12" />
+            <img src="/Maverick_trails-removebg-preview.png" alt="MaverickTrails Logo" className="h-12" />
           </Link>
           <button onClick={closeMobileMenu} className="text-black focus:outline-none">
             <FaTimes size={28} />
