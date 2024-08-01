@@ -19,7 +19,7 @@ const ForgotPassword = () => {
       return;
     }
     try {
-      await account.createRecovery(email, 'http://localhost:5173/reset-password');
+      await account.createRecovery(email, `${window.location.origin}/reset-password`);
       setMessage('Password reset link sent to your email.');
     } catch (error) {
       console.error('Password reset failed', error);
