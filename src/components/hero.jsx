@@ -10,6 +10,13 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 // Register the GSAP ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
+// Import images
+import sikkim from '/src/assets/sikkim-min.jpg';
+import auroville from '/src/assets/Auroville-min.jpg';
+import keralaBackwaters from '/src/assets/kerala-backwaters-min.jpg';
+import coorg from '/src/assets/coorg-min.jpg';
+import himachalPradesh from '/src/assets/himachal-pradesh-min.jpg';
+
 const Hero = () => {
   // References to the heading and paragraphs for animation
   const headingRef = useRef(null);
@@ -45,7 +52,7 @@ const Hero = () => {
   // Carousel items data
   const carouselItems = [
     {
-      src: 'src/assets/sikkim-min.jpg',
+      src: sikkim,
       type: 'image',
       alt: 'Photo by Abhishek Singh on Unsplash',
       title: 'Sikkim',
@@ -53,23 +60,23 @@ const Hero = () => {
       link: '/learn-more',
     },
     {
-      src: 'src/assets/Auroville-min.jpg',
+      src: auroville,
       type: 'image',
-      alt: 'auroville',
+      alt: 'Auroville',
       title: 'Auroville',
       description: 'It’s a place where sustainable living, non-traditional lifestyles and a spiritual life go hand in hand.',
       link: '/learn-more',
     },
     {
-      src: 'src/assets/kerala-backwaters-min.jpg',
+      src: keralaBackwaters,
       type: 'image',
-      alt: 'Photo by kyran low on Unsplash',
-      title: 'Kerela Backwaters',
-      description: 'Amidst the paddy fields and lush green palm grove these backwaters have its own gentle rhythm hewed out from the rivers which flow down from the Western Ghats to the coast of India.',
+      alt: 'Photo by Kyran Low on Unsplash',
+      title: 'Kerala Backwaters',
+      description: 'Amidst the paddy fields and lush green palm grove these backwaters have their own gentle rhythm hewed out from the rivers which flow down from the Western Ghats to the coast of India.',
       link: '/learn-more',
     },
     {
-      src: 'src/assets/coorg-min.jpg',
+      src: coorg,
       type: 'image',
       alt: 'Coorg',
       title: 'Coorg',
@@ -77,9 +84,9 @@ const Hero = () => {
       link: '/learn-more',
     },
     {
-      src: 'src/assets/himachal-pradesh-min.jpg',
+      src: himachalPradesh,
       type: 'image',
-      alt: 'Photo by Ashwini Chaudhary(Monty) on Unsplash',
+      alt: 'Photo by Ashwini Chaudhary (Monty) on Unsplash',
       title: 'Himachal Pradesh',
       description: 'The state is home to several prominent tourist destinations, including Shimla, Manali, Dharamshala, and Dalhousie, each offering a unique blend of natural beauty and cultural heritage.',
       link: '/learn-more',
