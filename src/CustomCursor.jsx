@@ -6,6 +6,13 @@ const CustomCursor = () => {
   const cursorRef = useRef(null);
 
   useEffect(() => {
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      cursorRef.current.style.display = 'none';
+      return; // Don't attach any event listeners on mobile devices
+    }
+
     const onMouseMove = (e) => {
       const { clientX: x, clientY: y } = e;
       gsap.to(cursorRef.current, {
@@ -16,11 +23,11 @@ const CustomCursor = () => {
     };
 
     const onMouseLeave = () => {
-      gsap.to(cursorRef.current, { opacity: 0, duration: 0.05 }); // Instant disappearance
+      gsap.to(cursorRef.current, { opacity: 0, duration: 0.05 });
     };
 
     const onMouseEnter = () => {
-      gsap.to(cursorRef.current, { opacity: 1, duration: 0.05 }); // Instant appearance
+      gsap.to(cursorRef.current, { opacity: 1, duration: 0.05 });
     };
 
     const onClick = (e) => {
