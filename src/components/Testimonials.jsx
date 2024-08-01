@@ -2,42 +2,50 @@ import React from 'react';
 import { FaStar } from 'react-icons/fa';
 import 'aos/dist/aos.css';
 
+// Import images
+import sonu from '/src/assets/zomato-viral-guy.jpg';
+import kachraSeth from '/src/assets/kachra-seth.jpg';
+import puneetSuperstar from '/src/assets/puneet.jpeg';
+import deepakKalal from '/src/assets/deepak.jpg';
+import bhupinderJogi from '/src/assets/bhupinder-jogi.jpeg';
+import hindustaniBhau from '/src/assets/hindustani-bhau.jpeg';
+
 const testimonials = [
   {
     name: 'Sonu',
     text: '😃',
     rating: 5,
-    image: 'src/assets/zomato-viral-guy.jpg'
+    image: sonu,
   },
   {
     name: 'Kachra Seth',
     text: 'Ek dum kadak travel plan hai',
     rating: 4,
-    image: 'src/assets/kachra-seth.jpg'
+    image: kachraSeth,
   },
   {
     name: 'Puneet Superstar',
     text: 'Yaaaay! Sustainable Travel',
     rating: 5,
-    image: 'src/assets/puneet.jpeg'
+    image: puneetSuperstar,
   },
   {
     name: 'Deepak Kalal',
     text: 'Rom Rom Eco-Friendly Bhaiyo',
     rating: 4,
-    image: 'src/assets/deepak.jpg'
+    image: deepakKalal,
   },
   {
     name: 'Bhupinder Jogi',
     text: 'Bhupinder Jogi.',
     rating: 5,
-    image: 'src/assets/bhupinder-jogi.jpeg'
+    image: bhupinderJogi,
   },
   {
     name: 'Hindustani Bhau',
     text: 'Pehli fursat mei Eco-friendly Trip',
     rating: 5,
-    image: 'src/assets/hindustani-bhau.jpeg'
+    image: hindustaniBhau,
   },
 ];
 
