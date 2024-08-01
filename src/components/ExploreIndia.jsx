@@ -3,12 +3,18 @@ import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+import northIndia from '/src/assets/taj-mahal-min.jpeg';
+import southIndia from '/src/assets/hampi-min.jpg';
+import eastIndia from '/src/assets/tibetian-flags-min.jpg';
+import westIndia from '/src/assets/jaipur-min.jpg';
+import centralIndia from '/src/assets/sanchi-min.jpg';
+
 const regions = [
-  { name: "North India", path: "/north-india", image: "/src/assets/taj-mahal-min.jpeg" },
-  { name: "South India", path: "/south-india", image: "/src/assets/hampi-min.jpg" },
-  { name: "East India", path: "/east-india", image: "/src/assets/tibetian-flags-min.jpg" },
-  { name: "West India", path: "/west-india", image: "/src/assets/jaipur-min.jpg" },
-  { name: "Central India", path: "/central-india", image: "/src/assets/sanchi-min.jpg" },
+  { name: "North India", path: "/north-india", image: northIndia },
+  { name: "South India", path: "/south-india", image: southIndia },
+  { name: "East India", path: "/east-india", image: eastIndia },
+  { name: "West India", path: "/west-india", image: westIndia },
+  { name: "Central India", path: "/central-india", image: centralIndia },
 ];
 
 const ExploreIndia = () => {
