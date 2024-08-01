@@ -3,11 +3,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faXTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 
+import akashImage from '/src/assets/Akash-Kumar-Gupta-min.jpeg';
+import adityaImage from '/src/assets/Aditya-Shekhar-min.jpeg';
+import nikhilImage from '/src/assets/nikhil-kumhar-min.jpeg';
+import piyushImage from '/src/assets/Piyush-Bharadwaj-min.jpeg';
+
 const teamMembers = [
   {
     name: 'Akash Kr. Gupta',
     role: 'Member 1',
-    image: 'src/assets/Akash-Kumar-Gupta-min.jpeg',
+    image: akashImage,
     github: 'https://github.com/akash7596',
     twitter: 'https://x.com/akashku77810153',
     linkedin: 'https://linkedin.com/in/akash-kumar-gupta-5a8980157',
@@ -15,7 +20,7 @@ const teamMembers = [
   {
     name: 'Aditya Shekhar',
     role: 'Member 2',
-    image: 'src/assets/Aditya-Shekhar-min.jpeg',
+    image: adityaImage,
     github: 'https://github.com/itsofficialadi',
     twitter: 'https://x.com/itsofficialadi',
     linkedin: 'https://www.linkedin.com/in/itsofficialadi/',
@@ -23,7 +28,7 @@ const teamMembers = [
   {
     name: 'Nikhil Kumhar',
     role: 'Member 3',
-    image: 'src/assets/nikhil-kumhar-min.jpeg',
+    image: nikhilImage,
     github: 'https://github.com/Nikhilkumhar',
     twitter: '#',
     linkedin: 'https://www.linkedin.com/in/nikhil-kumhar-724187265',
@@ -31,7 +36,7 @@ const teamMembers = [
   {
     name: 'Piyush Bharadwaj',
     role: 'Member 4',
-    image: 'src/assets/Piyush-Bharadwaj-min.jpeg',
+    image: piyushImage,
     github: 'https://github.com/Piyush3010i',
     twitter: 'https://x.com/3010_piyush',
     linkedin: 'https://www.linkedin.com/in/piyush-bharadwaj-6114a9319/',
