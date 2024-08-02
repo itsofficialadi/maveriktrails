@@ -11,8 +11,6 @@ Welcome to Maverick Trails! This project aims to make sustainable tourism the no
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
